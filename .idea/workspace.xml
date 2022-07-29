@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29069cc3-6824-4713-b819-5d1b772b5a8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/OrderDetailsFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AccordionTestsAnswers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseUITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/OrderPageScooterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderDetailsFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/OrderDetailsFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AccordionTestsAnswers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AccordionTestsAnswers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/OrderPageScooterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/OrderPageScooterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/p.aleksandrov/Downloads/sprint_4-main",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"

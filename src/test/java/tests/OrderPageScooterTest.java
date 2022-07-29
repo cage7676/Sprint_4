@@ -1,6 +1,6 @@
 package tests;
 
-import model.MainPage;
+import pageObject.MainPage;
 import model.Order;
 import org.junit.Assert;
 import org.junit.Test;
@@ -29,7 +29,7 @@ public class OrderPageScooterTest extends BaseUITest {
                 .open()
                 .clickOrderTopButton()
                 .fillOrderDetailsForm(orderData)
-                .orderTrue();
+                .isOrderTrue();
         Assert.assertTrue("Заказ не был оформлен", isInputDataBlockDisplayed);
 
 

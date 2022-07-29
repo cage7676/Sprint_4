@@ -1,11 +1,13 @@
 package tests;
 
 
-import model.MainPage;
+import pageObject.MainPage;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
+
 
 @RunWith(Parameterized.class)
 public class AccordionTestsAnswers extends BaseUITest {
@@ -18,7 +20,16 @@ public class AccordionTestsAnswers extends BaseUITest {
         this.answerNumber = answerNumber;
         this.expected = expected;
     }
+    @Test
+    public void checkAccordionButtonTextMatch() {
+        MainPage mainPage = new MainPage(driver)
+                .scrollToAccordion()
+                .clickAccordionButton(questionNumber);
+        mainPage.getAccordionText(answerNumber);
+        String actual = mainPage.getAccordionText(answerNumber);
+        Assert.assertEquals ("Текст не совпадает", expected, actual);
 
+    }
     @Parameterized.Parameters
     public static Object[][] getData() {
         return new Object[][] {
@@ -33,16 +44,6 @@ public class AccordionTestsAnswers extends BaseUITest {
 
         };
     }
-    @Test
-    public void checkAccordionButtonTextMatch() {
-        MainPage mainPage = new MainPage(driver)
-                .open()
-                .scrollToAccordion()
-                .clickAccordionButton(questionNumber);
-        mainPage.getAccordionText(answerNumber);
-        String actual = mainPage.getAccordionText(answerNumber);
-        Assert.assertEquals ("Текст не совпадает", expected, actual);
 
-    }
 
 }

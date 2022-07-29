@@ -1,5 +1,6 @@
-package model;
+package pageObject;
 
+import model.Order;
 import org.openqa.selenium.*;
 
 public class OrderDetailsFormPage {
@@ -66,10 +67,11 @@ public class OrderDetailsFormPage {
     }
 
     private OrderDetailsFormPage choiceButton(String button) {
-        if (button == "Верхняя кнопка") {
+        if (button.equals("Нижняя кнопка")) {
+            // (button.equals("Нижняя кнопка"))
             driver.findElement(orderButtonInHeader).click();
         }
-        if (button == "Нижняя кнопка") {
+        if (button.equals("Нижняя кнопка")) {
             WebElement element = driver.findElement(orderButtonDown);
             ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);
             element.click();
@@ -135,7 +137,7 @@ public class OrderDetailsFormPage {
         return this;
     }
 
-    public boolean orderTrue() {
+    public boolean isOrderTrue() {
         return driver.findElement(finalOrder).isDisplayed();
     }
 }

@@ -1,30 +1,31 @@
 package tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObject.MainPage;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 
 public class BaseUITest {
     protected static WebDriver driver;
 
-    @Before
-    public void setUp() {
+    @BeforeClass
+    public static void setUp() throws Exception {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        model.MainPage mainPage = new model.MainPage(driver)
+        MainPage mainPage = new MainPage(driver)
                 .open()
                 .acceptCookie();
     }
-    @After
-    public void teatDown() {
+
+    @AfterClass
+    public static void teatDown() throws Exception {
         driver.quit();
 
     }
