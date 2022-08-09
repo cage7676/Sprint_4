@@ -17,8 +17,8 @@ public class BaseUITest {
 
     @BeforeClass
     public static void setUp() {
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         new WebDriverWait(driver, Duration.ofSeconds(10));
         new MainPage(driver)
                 .open()
