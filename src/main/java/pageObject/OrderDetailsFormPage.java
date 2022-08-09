@@ -42,7 +42,7 @@ public class OrderDetailsFormPage {
     private final By finalButtonOrder = By.xpath("//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     // Заказ успешно оформлен
-    private final By finalOrder = By.xpath("//div[@class='Order_NextButton__1_rCA']");
+    private final By finalOrder = By.xpath("//div[@class='Order_Text__2broi']");
 
     public OrderDetailsFormPage fillOrderDetailsForm(Order order) {
         choiceButton(order.getButton());

@@ -5,6 +5,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObject.MainPage;
 
@@ -15,17 +16,17 @@ public class BaseUITest {
     protected static WebDriver driver;
 
     @BeforeClass
-    public static void setUp() throws Exception {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        MainPage mainPage = new MainPage(driver)
+    public static void setUp() {
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
+        new WebDriverWait(driver, Duration.ofSeconds(10));
+        new MainPage(driver)
                 .open()
                 .acceptCookie();
     }
 
     @AfterClass
-    public static void teatDown() throws Exception {
+    public static void teatDown() {
         driver.quit();
 
     }

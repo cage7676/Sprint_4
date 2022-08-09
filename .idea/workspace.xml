@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29069cc3-6824-4713-b819-5d1b772b5a8e" name="Changes" comment="">
+    <list default="true" id="29069cc3-6824-4713-b819-5d1b772b5a8e" name="Changes" comment="Исправление замечаний по проекту">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/OrderDetailsFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObject/OrderDetailsFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AccordionTestsAnswers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AccordionTestsAnswers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseUITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/OrderPageScooterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/OrderPageScooterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,17 +32,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/p.aleksandrov/Downloads/sprint_4-main",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/p.aleksandrov/Downloads/sprint_4-main&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.AccordionTestsAnswers">
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.OrderPageScooterTest (1)">
     <configuration name="AccordionTestsAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <extension name="coverage">
@@ -59,6 +59,22 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AccordionTestsAnswers" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccordionTestsAnswers.checkAccordionButtonTextMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AccordionTestsAnswers" />
+      <option name="METHOD_NAME" value="checkAccordionButtonTextMatch" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,8 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccordionTestsAnswers" />
         <item itemvalue="JUnit.OrderPageScooterTest (1)" />
+        <item itemvalue="JUnit.AccordionTestsAnswers.checkAccordionButtonTextMatch" />
+        <item itemvalue="JUnit.AccordionTestsAnswers" />
         <item itemvalue="TestNG.AccordionTestsAnswers" />
         <item itemvalue="JUnit.OrderPageScooterTest" />
       </list>
@@ -128,6 +145,14 @@
       <option name="presentableId" value="Default" />
       <updated>1658412586810</updated>
     </task>
+    <task id="LOCAL-00001" summary="Исправление замечаний по проекту">
+      <created>1659115810640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659115810640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,5 +165,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Исправление замечаний по проекту" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправление замечаний по проекту" />
   </component>
 </project>
